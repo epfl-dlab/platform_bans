@@ -1,0 +1,25 @@
+                       OLS Regression Results                      
+Dep. Variable:   ,SEVERE_TOXICITY80p,  R-squared:         ,   0.082
+Model:           ,OLS               ,  Adj. R-squared:    ,   0.061
+Method:          ,Least Squares     ,  F-statistic:       ,   4.097
+Date:            ,Tue, 17 Aug 2021  ,  Prob (F-statistic):,0.00337 
+Time:            ,22:36:28          ,  Log-Likelihood:    , -403.43
+No. Observations:,   179            ,  AIC:               ,   816.9
+Df Residuals:    ,   174            ,  BIC:               ,   832.8
+Df Model:        ,     4            ,                     ,        
+Covariance Type: ,hc0               ,                     ,        
+                          ,   coef   , std err ,    z    ,P>|z| ,  [0.025 ,  0.975] 
+Intercept                 ,   11.0128,    1.582,    6.961, 0.000,    7.912,   14.113
+date_idx                  ,    0.0103,    0.009,    1.101, 0.271,   -0.008,    0.029
+intervention_flag         ,   -1.6825,    0.788,   -2.135, 0.033,   -3.227,   -0.138
+date_idx:intervention_flag,    0.0147,    0.011,    1.304, 0.192,   -0.007,    0.037
+length                    ,   -0.0022,    0.013,   -0.169, 0.866,   -0.028,    0.023
+Omnibus:      , 9.229,  Durbin-Watson:     ,   1.793
+Prob(Omnibus):, 0.010,  Jarque-Bera (JB):  ,  10.971
+Skew:         , 0.385,  Prob(JB):          , 0.00415
+Kurtosis:     , 3.938,  Cond. No.          ,1.23e+03
+
+Warnings:
+[1] Standard Errors are heteroscedasticity robust (HC0)
+[2] The condition number is large, 1.23e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

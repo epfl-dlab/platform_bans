@@ -1,0 +1,25 @@
+                      OLS Regression Results                     
+Dep. Variable:   ,NegativeEmotion ,  R-squared:         ,   0.249
+Model:           ,OLS             ,  Adj. R-squared:    ,   0.231
+Method:          ,Least Squares   ,  F-statistic:       ,   15.64
+Date:            ,Tue, 17 Aug 2021,  Prob (F-statistic):,5.99e-11
+Time:            ,22:36:27        ,  Log-Likelihood:    ,  71.739
+No. Observations:,   179          ,  AIC:               ,  -133.5
+Df Residuals:    ,   174          ,  BIC:               ,  -117.5
+Df Model:        ,     4          ,                     ,        
+Covariance Type: ,hc0             ,                     ,        
+                          ,   coef   , std err ,    z    ,P>|z| ,  [0.025 ,  0.975] 
+Intercept                 ,    3.2088,    0.202,   15.919, 0.000,    2.814,    3.604
+date_idx                  ,    0.0010,    0.001,    1.110, 0.267,   -0.001,    0.003
+intervention_flag         ,   -0.1247,    0.080,   -1.568, 0.117,   -0.281,    0.031
+date_idx:intervention_flag,    0.0013,    0.001,    1.491, 0.136,   -0.000,    0.003
+length                    ,   -0.0019,    0.002,   -1.212, 0.225,   -0.005,    0.001
+Omnibus:      , 3.222,  Durbin-Watson:     ,   1.894
+Prob(Omnibus):, 0.200,  Jarque-Bera (JB):  ,   2.795
+Skew:         , 0.285,  Prob(JB):          ,   0.247
+Kurtosis:     , 3.225,  Cond. No.          ,2.03e+03
+
+Warnings:
+[1] Standard Errors are heteroscedasticity robust (HC0)
+[2] The condition number is large, 2.03e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

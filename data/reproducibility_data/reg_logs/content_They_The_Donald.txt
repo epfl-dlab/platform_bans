@@ -1,0 +1,25 @@
+                      OLS Regression Results                     
+Dep. Variable:   ,They            ,  R-squared:         ,   0.549
+Model:           ,OLS             ,  Adj. R-squared:    ,   0.540
+Method:          ,Least Squares   ,  F-statistic:       ,   44.95
+Date:            ,Tue, 17 Aug 2021,  Prob (F-statistic):,7.39e-27
+Time:            ,22:36:27        ,  Log-Likelihood:    ,  180.78
+No. Observations:,   204          ,  AIC:               ,  -351.6
+Df Residuals:    ,   199          ,  BIC:               ,  -335.0
+Df Model:        ,     4          ,                     ,        
+Covariance Type: ,hc0             ,                     ,        
+                          ,   coef   , std err ,    z    ,P>|z| ,  [0.025 ,  0.975] 
+Intercept                 ,    1.3047,    0.124,   10.553, 0.000,    1.062,    1.547
+date_idx                  ,  5.16e-05,    0.000,    0.179, 0.858,   -0.001,    0.001
+intervention_flag         ,   -0.2913,    0.032,   -9.014, 0.000,   -0.355,   -0.228
+date_idx:intervention_flag,    0.0048,    0.000,   10.034, 0.000,    0.004,    0.006
+length                    ,    0.0055,    0.002,    3.349, 0.001,    0.002,    0.009
+Omnibus:      ,10.593,  Durbin-Watson:     ,   0.951
+Prob(Omnibus):, 0.005,  Jarque-Bera (JB):  ,  10.794
+Skew:         , 0.549,  Prob(JB):          , 0.00453
+Kurtosis:     , 3.251,  Cond. No.          ,1.82e+03
+
+Warnings:
+[1] Standard Errors are heteroscedasticity robust (HC0)
+[2] The condition number is large, 1.82e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

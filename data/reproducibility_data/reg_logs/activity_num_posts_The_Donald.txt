@@ -1,0 +1,22 @@
+                      OLS Regression Results                     
+Dep. Variable:   ,num_posts       ,  R-squared:         ,   0.409
+Model:           ,OLS             ,  Adj. R-squared:    ,   0.400
+Method:          ,Least Squares   ,  F-statistic:       ,   91.86
+Date:            ,Tue, 17 Aug 2021,  Prob (F-statistic):,2.08e-37
+Time:            ,22:36:22        ,  Log-Likelihood:    , -2006.5
+No. Observations:,   204          ,  AIC:               ,   4021.
+Df Residuals:    ,   200          ,  BIC:               ,   4034.
+Df Model:        ,     3          ,                     ,        
+Covariance Type: ,hc0             ,                     ,        
+                          ,   coef   , std err ,    z    ,P>|z| ,  [0.025 ,  0.975] 
+Intercept                 , 2.665e+04, 1091.391,   24.418, 0.000, 2.45e+04, 2.88e+04
+date_idx                  ,    8.7981,   13.614,    0.646, 0.518,  -17.885,   35.481
+intervention_flag         ,-1.442e+04, 1291.217,  -11.165, 0.000,-1.69e+04,-1.19e+04
+date_idx:intervention_flag,  120.5646,   18.686,    6.452, 0.000,   83.940,  157.189
+Omnibus:      ,13.943,  Durbin-Watson:     ,   0.614
+Prob(Omnibus):, 0.001,  Jarque-Bera (JB):  ,  15.310
+Skew:         , 0.567,  Prob(JB):          ,0.000474
+Kurtosis:     , 3.718,  Cond. No.          ,    477.
+
+Warnings:
+[1] Standard Errors are heteroscedasticity robust (HC0)

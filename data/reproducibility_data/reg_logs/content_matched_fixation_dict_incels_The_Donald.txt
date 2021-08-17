@@ -1,0 +1,25 @@
+                        OLS Regression Results                       
+Dep. Variable:   ,fixation_dict_incels,  R-squared:         ,   0.539
+Model:           ,OLS                 ,  Adj. R-squared:    ,   0.529
+Method:          ,Least Squares       ,  F-statistic:       ,   64.32
+Date:            ,Tue, 17 Aug 2021    ,  Prob (F-statistic):,7.93e-35
+Time:            ,22:36:27            ,  Log-Likelihood:    ,  442.02
+No. Observations:,   204              ,  AIC:               ,  -874.0
+Df Residuals:    ,   199              ,  BIC:               ,  -857.4
+Df Model:        ,     4              ,                     ,        
+Covariance Type: ,hc0                 ,                     ,        
+                          ,   coef   , std err ,    z    ,P>|z| ,  [0.025 ,  0.975] 
+Intercept                 ,    0.2552,    0.038,    6.644, 0.000,    0.180,    0.331
+date_idx                  ,   -0.0001,    0.000,   -1.277, 0.202,   -0.000, 7.45e-05
+intervention_flag         ,   -0.0660,    0.011,   -5.780, 0.000,   -0.088,   -0.044
+date_idx:intervention_flag,    0.0005,    0.000,    3.733, 0.000,    0.000,    0.001
+length                    ,   -0.0008,    0.001,   -1.529, 0.126,   -0.002,    0.000
+Omnibus:      ,22.718,  Durbin-Watson:     ,   1.596
+Prob(Omnibus):, 0.000,  Jarque-Bera (JB):  ,  27.240
+Skew:         , 0.791,  Prob(JB):          ,1.22e-06
+Kurtosis:     , 3.837,  Cond. No.          ,1.61e+03
+
+Warnings:
+[1] Standard Errors are heteroscedasticity robust (HC0)
+[2] The condition number is large, 1.61e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
