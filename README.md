@@ -22,48 +22,49 @@ Please cite as:
 
 Other useful links:
 
-- arXiV version;
-- reproducibility data;
-- presentation;
+- [arXiV version](https://arxiv.org/abs/2010.10397);
+- [reproducibility data](https://zenodo.org/record/5171068);
 
 ## Brief description of data
 
-`activity_agg.csv`:  aggregated activity signals.
-- `venue`: `/r/Incels` or `/r/The_Donald`
-- `date_post`: date;
-- `id`: number of posts;
-- `author`: number of authors;
-- `length`: median post length;
-- `first`: number of newcomers;
-- `idpauthor`: number of posts per author;
-- `intervention_flag`: 0 if before the migration, 1 otherwise;
-- `date_idx` date relative to the migration day;
+1. `activity_agg.csv`:  aggregated activity signals.
+    - `venue`: `/r/Incels` or `/r/The_Donald`
+    - `date_post`: date;
+    - `id`: number of posts;
+    - `author`: number of authors;
+    - `length`: median post length;
+    - `first`: number of newcomers;
+    - `idpauthor`: number of posts per author;
+    - `intervention_flag`: 0 if before the migration, 1 otherwise;
+    - `date_idx` date relative to the migration day;
 
-`content(_matched)?_agg(_fixation_dict)?`: aggregated content signals. If file name contains `_matched`, 
+2. `content_agg.csv`, `content_agg_fixation_dict.csv`, `content_matched_agg.csv` and 
+`content_matched_agg_fixation_dict.csv`: aggregated content signals. If file name contains `_matched`, 
 it has data only for matched users, if file name contains `fixation_dict`, it has data only for posts containing one of
- the words in the fixation dictionary.
-- `venue`: `/r/Incels` or `/r/The_Donald`
-- `date_post`: date;
-- `SEVERE_TOXICITY80p`: percentage of posts with >0.8 toxicity.
-- `fixation_dict_incels` ,` fixation_dict_td`, `NegativeEmotion`, `CoreHostility` , `We`, `They`: number of occurrences 
-in each category divided by number of words.
-- `length`: median post length;
-- `intervention_flag`: 0 if before the migration, 1 otherwise;
-- `date_idx` date relative to the migration day;
+the words in the fixation dictionary.
+    - `venue`: `/r/Incels` or `/r/The_Donald`
+    - `date_post`: date;
+    - `SEVERE_TOXICITY80p`: percentage of posts with >0.8 toxicity.
+    - `fixation_dict_incels` ,` fixation_dict_td`, `NegativeEmotion`, `CoreHostility` , `We`, `They`: number of occurrences 
+    in each category divided by number of words.
+    - `length`: median post length;
+    - `intervention_flag`: 0 if before the migration, 1 otherwise;
+    - `date_idx` date relative to the migration day;
 
-`users_td.csv` and `users_incels.csv`: user-level aggregated signals (one file per community; one user per line).
-- `num_posts`: number of posts;
-- `SEVERE_TOXICITY80p`: percentage of posts with >0.8 toxicity.
-- `fixation_dict_incels`, `fixation_dict_td`, `NegativeEmotion`, `CoreHostility`, `We`, `They`: number of occurrences in
- each category divided by number of words.
-- `length`: median post length;
-- `ptile`: activity quartile of the user in the pre-migration period;
-- `kind`: `before` if before the migration, `after` if after the migration;
+3. `users_td.csv` and `users_incels.csv`: user-level aggregated signals (one file per community; one user per line).
+    - `num_posts`: number of posts;
+    - `SEVERE_TOXICITY80p`: percentage of posts with >0.8 toxicity.
+    - `fixation_dict_incels`, `fixation_dict_td`, `NegativeEmotion`, `CoreHostility`, `We`, `They`: number of 
+    occurrences in each category divided by number of words.
+    - `length`: median post length;
+    - `ptile`: activity quartile of the user in the pre-migration period;
+    - `kind`: `before` if before the migration, `after` if after the migration;
 
-`users_matched_incels(_f)?.csv` and `users_matched_incels(_f)?.csv`: data comparing matched users (before vs. after 
-migration, one user per line, one file per community). If file name contains `_f`, it has data only for posts containing
- one of the words in the fixation dictionary. Fields are the same as in `users_td.csv` and `users_incels.csv` appended
- with `_x` if considering the period before the migration and with `_y` if considering the period after.
+4. `users_matched_incels.csv`, `users_matched_incels_f.csv`, `users_matched_td.csv`, `users_matched_incels_td_f.csv`: 
+data comparing matched users (before vs. after migration, one user per line, one file per community). If file name 
+contains `_f`, it has data only for posts containing one of the words in the fixation dictionary. Fields are the same as
+in `users_td.csv` and `users_incels.csv` appended with `_x` if considering the period before the migration and with
+`_y` if considering the period after.
 
 ## Brief description of code
 
